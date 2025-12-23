@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Tareas Diarias</title>
+</head>
+<body>
+    <main class="container">
+
+        <!-- Usuario -->
+        <section class="user-section">
+            <div class="user-name" id="userName">default</div>
+            <button class="change-name-btn" id="changeNameBtn">Cambiar nombre</button>
+        </section>
+
+        <!-- Barra de Experiencia -->
+        <section class="exp-bar-container">
+            <div class="exp-bar-label">
+                <span class="level">Nivel <span id="userLevel">1</span></span> &nbsp;•&nbsp; 
+                <span>EXP: <span id="userExp">0</span> / <span id="expToLevel">100</span></span>
+            </div>
+
+            <div class="exp-bar">
+                <div class="exp-fill" id="expFill"></div>
+            </div>
+        </section>
+
+        <!-- Agregar Tarea -->
+        <section class="add-task-section">
+            <input type="text" id="taskInput" placeholder="Nueva tarea diaria">
+            <input type="number" id="expInput" placeholder="EXP" min="1" value="10">
+            <button class="add-task-btn" id="addTaskBtn">Agregar</button>
+        </section>
+
+        <!-- Lista de Tareas -->
+        <ul class="task-list" id="taskList">
+            <li class="task-item"> <!--PLACEHOLDER-->
+                <span class="task-left">
+                    <input type="checkbox" class="task-checkbox">
+                    <span>Estudiar programación</span>
+                </span>
+                <span class="task-exp">+10 XP</span>
+            </li>
+        </ul>
+
+        <!-- Bonus por completar todo -->
+        <div class="bonus-exp" id="bonusExp" style="display: none;">
+            ¡Completaste todas las tareas! Bonus: <span id="bonusExpValue">+20</span> XP
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
