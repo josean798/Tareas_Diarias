@@ -72,3 +72,8 @@ body {
 .login-btn:hover, .login-btn:focus {
     background: linear-gradient(90deg, #67e8f9, #445ad8);
 }
+
+.input-error {
+    border: 1.8px solid #e53e3e;
+    background: #210e11;
+}
