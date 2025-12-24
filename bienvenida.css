@@ -1,0 +1,125 @@
+body {
+    background: #181b23;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenida-container {
+    background: #23263b;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 32, 43, 0.32);
+    padding: 38px 28px 22px 28px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-title {
+    color: #67e8f9;
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin-bottom: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 4px 8px #0003;
+}
+
+.intro-text {
+    color: #f3f4fa;
+    font-size: 1.09em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tareas-form {
+    width: 101%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#tareasInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarea-input-row {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.tarea-input {
+    flex: 3;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #191b25;
+    color: #fafafa;
+    font-size: 1em;
+    box-shadow: 0 2px 12px #0002 inset;
+}
+
+.importancia-input {
+    flex: 1;
+    border-radius: 8px;
+    border: none;
+    background: #30335e;
+    color: #fafafa;
+    padding: 8px;
+    font-size: 0.95em;
+}
+
+.add-tarea-btn, .registrar-btn {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #4fd1c5, #667eea);
+    color: #101822;
+    cursor: pointer;
+    box-shadow: 0 2px 6px #0002;
+    transition: background 0.2s;
+}
+
+.add-tarea-btn {
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #dffaf9, #7ad7fa);
+    color: #232a45;
+    }
+
+.add-tarea-btn:hover, .add-tarea-btn:focus {
+    background: linear-gradient(90deg, #a6f5ee, #39c1f8);
+}
+.registrar-btn:hover, .registrar-btn:focus {
+    background: linear-gradient(90deg, #67e8f9, #445ad8);
+}
+
+.quitar-tarea-btn {
+    background: #445ad8;
+    color: #fff0fd;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quitar-tarea-btn:hover {
+    background: #72295a;
+}

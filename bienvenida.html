@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Bienvenido - Tareas Diarias</title>
+    <link rel="stylesheet" href="bienvenida.css">
+</head>
+<body>
+    <div class="bienvenida-container">
+        <h1 class="welcome-title" id="welcomeTitle">Bienvenido</h1>
+        <div class="intro-text">¿Qué tareas vas a realizar hoy?</div>
+        <form class="tareas-form" id="tareasForm" autocomplete="off">
+        <div id="tareasInputsContainer">
+            <div class="tarea-input-row">
+            <input type="text" class="tarea-input" placeholder="Descripción de la tarea" maxlength="40" required>
+            <select class="importancia-input">
+                <option value="1">Importancia 1</option>
+                <option value="2">Importancia 2</option>
+                <option value="3">Importancia 3</option>
+            </select>
+            <button type="button" class="quitar-tarea-btn" title="Quitar tarea">&times;</button>
+            </div>
+        </div>
+        <button type="button" id="addTareaBtn" class="add-tarea-btn">Agregar otra tarea</button>
+        <button type="submit" class="registrar-btn">Registrar tareas</button>
+        </form>
+    </div>
+</body>
+</html>
