@@ -1,6 +1,8 @@
 body {
-    font-family: sans-serif;
-    background: #181b23;
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background: magenta url('img/vaporwave-bg.png') center;
     color: #f3f4f6;
     margin: 0;
     padding: 0;
@@ -20,18 +22,18 @@ body {
 .user-section {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     justify-content: flex-start;
 }
 .user-name {
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 20px;
 }
 .exp-bar-container {
     margin-bottom: 32px;
 }
 .exp-bar-label {
-    font-size: 0.95em;
+    font-size: 10px;
     margin-bottom: 4px;
     color: #ccccff;
 }
@@ -105,8 +107,10 @@ body {
 .finalizar-btn {
     width: 100%;
     padding: 12px 0;
-    font-size: 1.02em;
-    font-weight: bold;
+    font-size: 15px;
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;    
     border: none;
     border-radius: 8px;
     background: linear-gradient(90deg, #4fd1c5 60%, #667eea 100%);
